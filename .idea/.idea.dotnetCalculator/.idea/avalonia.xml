@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="App.axaml" value="dotnetCalculator.csproj" />
+        <entry key="MainWindow.axaml" value="dotnetCalculator.csproj" />
+        <entry key="Styles/AppDefaultStyles.axaml" value="dotnetCalculator.csproj" />
+        <entry key="Styles/Styles1.axaml" value="dotnetCalculator.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

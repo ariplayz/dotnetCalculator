@@ -19,30 +19,35 @@
                                         </Label>
                                 </Border>
                                 <StackPanel Orientation="Horizontal">
-                                        <Button Content="1" Click="one"></Button>
-                                        <Button Content="2" Click="two"></Button>
-                                        <Button Content="3" Click="three"></Button>
+                                        <Button Content="1" Click="NumberButton_Click"></Button>
+                                        <Button Content="2" Click="NumberButton_Click"></Button>
+                                        <Button Content="3" Click="NumberButton_Click"></Button>
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal">
-                                        <Button Content="4" Click="four"></Button>
-                                        <Button Content="5" Click="five"></Button>
-                                        <Button Content="6" Click="six"></Button>
+                                        <Button Content="4" Click="NumberButton_Click"></Button>
+                                        <Button Content="5" Click="NumberButton_Click"></Button>
+                                        <Button Content="6" Click="NumberButton_Click"></Button>
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal">
-                                        <Button Content="7" Click="seven"></Button>
-                                        <Button Content="8" Click="eight"></Button>
-                                        <Button Content="9" Click="nine"></Button>
+                                        <Button Content="7" Click="NumberButton_Click"></Button>
+                                        <Button Content="8" Click="NumberButton_Click"></Button>
+                                        <Button Content="9" Click="NumberButton_Click"></Button>
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                                        <Button Content="0" Click="zero"></Button>
+                                        <Button Content="0" Click="NumberButton_Click"></Button>
                                 </StackPanel>
                         </StackPanel>
                         <StackPanel Orientation="Vertical">
-                                <Button Classes="icon" Content="&#xe3d4;" Click="plus" HorizontalAlignment="Center" VerticalAlignment="Center" Height="70"></Button>
-                                <Button Classes="icon" Content="&#xe32a;" Click="minus" HorizontalAlignment="Center" VerticalAlignment="Center" Height="70"></Button>
-                                <Button Classes="icon" Content="&#xe1fa;" Click="divide" HorizontalAlignment="Center" VerticalAlignment="Center" Height="70"></Button>
-                                <Button Classes="icon" Content="&#xe4f6;" Click="multiply" HorizontalAlignment="Center" VerticalAlignment="Center" Height="70"></Button>
-                                <Button Classes="mono" Content="=" Click="equal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 30 0 0"></Button>
+                                <Button Classes="icon" Content="&#xe3d4;" Tag="+" Click="OperationButton_Click" 
+                                        HorizontalAlignment="Center" VerticalAlignment="Center" Height="70"/>
+                                <Button Classes="icon" Content="&#xe32a;" Tag="-" Click="OperationButton_Click" 
+                                        HorizontalAlignment="Center" VerticalAlignment="Center" Height="70"/>
+                                <Button Classes="icon" Content="&#xe1fa;" Tag="/" Click="OperationButton_Click" 
+                                        HorizontalAlignment="Center" VerticalAlignment="Center" Height="70"/>
+                                <Button Classes="icon" Content="&#xe4f6;" Tag="*" Click="OperationButton_Click" 
+                                        HorizontalAlignment="Center" VerticalAlignment="Center" Height="70"/>
+                                <Button Classes="mono" Content="=" Click="EqualButton_Click" 
+                                        HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 30 0 0"/>
                         </StackPanel>
                 </StackPanel>
         </Border>
