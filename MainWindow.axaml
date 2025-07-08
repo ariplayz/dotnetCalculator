@@ -14,8 +14,8 @@
                                         <Label x:Name="output"
                                                FontSize="45" 
                                                HorizontalAlignment="Center"
-                                               Foreground="{DynamicResource PrimaryForeground}">
-                                                
+                                               Foreground="{DynamicResource PrimaryForeground}"
+                                               Content="">
                                         </Label>
                                 </Border>
                                 <StackPanel Orientation="Horizontal">
@@ -35,6 +35,7 @@
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                                         <Button Content="0" Click="NumberButton_Click"></Button>
+                                        <Button Content="&#xece0;" Classes="icononlyfill"></Button>
                                 </StackPanel>
                         </StackPanel>
                         <StackPanel Orientation="Vertical">
