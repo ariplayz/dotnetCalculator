@@ -21,9 +21,12 @@ public partial class MainWindow : Window
         if (sender is not Button button || button.Content is not string number)
             return;
 
+        if (number == "." && currentNumber.Contains("."))
+            return; // Prevent multiple decimal points
+
         if (isNewNumber)
         {
-            currentNumber = number;
+            currentNumber = number == "." ? "0." : number;
             isNewNumber = false;
         }
         else
@@ -62,6 +65,15 @@ public partial class MainWindow : Window
             CalculateResult();
             currentOperation = "";
         }
+    }
+
+    private void ClearButton_Click(object sender, RoutedEventArgs e)
+    {
+        output.Content = "";
+        currentNumber = "";
+        currentOperation = "";
+        isNewNumber = true;
+        
     }
 
     private void CalculateResult()
