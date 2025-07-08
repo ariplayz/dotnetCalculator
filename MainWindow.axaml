@@ -2,10 +2,48 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        Width="300" Height="460"
+        mc:Ignorable="d" d:DesignWidth="250" d:DesignHeight="460"
         x:Class="dotnetCalculator.MainWindow"
         Title="Calculator">
         
-        <Grid ></Grid>
-        
+        <Border Padding="20" Background="{DynamicResource PrimaryBackgroundGradient}">
+                <StackPanel Orientation="Horizontal">
+                        <StackPanel Orientation="Vertical" Background="{DynamicResource PrimaryBackground}">
+                                <Border Background="{DynamicResource PrimaryHoverBackground}">
+                                        <Label x:Name="output"
+                                               FontSize="45" 
+                                               HorizontalAlignment="Center"
+                                               Foreground="{DynamicResource PrimaryForeground}">
+                                                
+                                        </Label>
+                                </Border>
+                                <StackPanel Orientation="Horizontal">
+                                        <Button Content="1" Click="one"></Button>
+                                        <Button Content="2" Click="two"></Button>
+                                        <Button Content="3" Click="three"></Button>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                        <Button Content="4" Click="four"></Button>
+                                        <Button Content="5" Click="five"></Button>
+                                        <Button Content="6" Click="six"></Button>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                        <Button Content="7" Click="seven"></Button>
+                                        <Button Content="8" Click="eight"></Button>
+                                        <Button Content="9" Click="nine"></Button>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                        <Button Content="0" Click="zero"></Button>
+                                </StackPanel>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical">
+                                <Button Classes="icon" Content="&#xe3d4;" Click="plus" HorizontalAlignment="Center" VerticalAlignment="Center" Height="70"></Button>
+                                <Button Classes="icon" Content="&#xe32a;" Click="minus" HorizontalAlignment="Center" VerticalAlignment="Center" Height="70"></Button>
+                                <Button Classes="icon" Content="&#xe1fa;" Click="divide" HorizontalAlignment="Center" VerticalAlignment="Center" Height="70"></Button>
+                                <Button Classes="icon" Content="&#xe4f6;" Click="multiply" HorizontalAlignment="Center" VerticalAlignment="Center" Height="70"></Button>
+                                <Button Classes="mono" Content="=" Click="equal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 30 0 0"></Button>
+                        </StackPanel>
+                </StackPanel>
+        </Border>
 </Window>
